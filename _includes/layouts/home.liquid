@@ -1,0 +1,66 @@
+---
+layout: layouts/base.liquid
+---
+
+<div class="wrapper" data-bs-theme="dark" style="background-color: #333;">
+        
+    <div class="container">
+
+        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+
+            <div class="col-md-3 mb-2 mb-md-0">
+                <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+                    <img src="/img/mobilcos_white.png" width="40" class="d-inline-block align-top" alt="">
+                </a>
+            </div>
+
+            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="/" class="nav-link link-light px-2">Accueil</a></li>
+                <li><a href="/fonctionnalites" class="nav-link link-light px-2">Fonctionnalités</a></li>
+                <li><a href="/tarification" class="nav-link link-light px-2">Tarification</a></li>
+            </ul>
+
+            <div class="col-md-3 text-end">
+                <a href="mailto:contact@mobilcos.fr" class="btn btn-outline-light btn-sm">Nous contacter</a>
+            </div>
+
+        </header>
+    </div>
+
+    <main class="container page-body">
+        {{ content }}
+    </main>
+
+    <div class="container">
+
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+
+            <div class="col mb-3 text-secondary">
+                <p>2023 MobilCOS - Par le <a href="https://sdis62.fr">SDIS62</a></p>
+            </div>
+
+            <div class="col mb-3">
+                
+            </div>
+
+            <div class="col mb-3">
+                <h5 class="text-light">Produit</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-body-secondary">Accueil</a></li>
+                    <li class="nav-item mb-2"><a href="/fonctionnalites" class="nav-link p-0 text-body-secondary">Fonctionnalités</a></li>
+                    <li class="nav-item mb-2"><a href="/tarification" class="nav-link p-0 text-body-secondary">Tarification</a></li>
+                </ul>
+            </div>
+
+            <div class="col mb-3">
+                <h5 class="text-light">Ressources</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="/politique-de-confidentialite" class="nav-link p-0 text-body-secondary">Politique de confidentialité</a></li>
+                </ul>
+            </div>
+
+        </footer>
+
+    </div>
+
+</div>

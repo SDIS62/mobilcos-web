@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.0"
+  },
+  "scripts": {
+    "generate": "npx @11ty/eleventy --output=dist",
+    "serve": "DEBUG=* npx @11ty/eleventy --output=dist --watch --serve --port=8080"
+  }
+}
