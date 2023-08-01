@@ -3,7 +3,7 @@
     "@11ty/eleventy": "^2.0.0"
   },
   "scripts": {
-    "generate": "npx @11ty/eleventy --output=dist",
-    "serve": "DEBUG=* npx @11ty/eleventy --output=dist --watch --serve --port=8080"
+    "generate": "npx @11ty/eleventy",
+    "serve": "DEBUG=* npx @11ty/eleventy --watch --serve --port=8080"
   }
 }

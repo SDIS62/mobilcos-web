@@ -7,6 +7,10 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("error.html");
 
   return {
-    templateFormats: ['html', 'liquid', 'md']
+    templateFormats: ['html', 'liquid', 'md'],
+    dir: {
+      input: "src",
+      output: "dist"
+    }
   };
 }

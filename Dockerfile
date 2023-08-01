@@ -10,15 +10,8 @@ COPY package-lock.json .
 RUN npm ci
 
 # Build routine
-COPY _includes _includes
-COPY css css
-COPY img img
+COPY src src
 COPY .eleventy.js .eleventy.js
-COPY error.html error.html
-COPY fonctionnalites.liquid fonctionnalites.liquid
-COPY index.liquid index.liquid
-COPY politique-de-confidentialite.liquid politique-de-confidentialite.liquid
-COPY tarification.liquid tarification.liquid
 RUN npm run generate
 
 # Phase 2 : set up nginx http server
